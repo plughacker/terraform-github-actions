@@ -20,7 +20,7 @@ validate_inputs() {
 
     tfVersion=${INPUT_TF_VERSION}
     tfWorkingDir=${INPUT_TF_WORKING_DIR}
-    tfCommand=${INPUT_TG_COMMAND}
+    tfCommand=${INPUT_TF_COMMAND}
     gitSSHKey=${INPUT_GIT_SSH_KEY}
 }
 
