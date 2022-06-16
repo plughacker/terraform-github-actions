@@ -84,14 +84,12 @@ main() {
 
     case "${tfCommand}" in
         apply)
-            terraform_init
             terraform_apply
             ;;
         init)
             terraform_init
             ;;
         plan)
-            terraform_init
             terraform_plan
             ;;
         *)

@@ -2,6 +2,7 @@
 
 terraform_init() {
     echo "[+] Planning Terraform configuration"
+    terraform init
     terraform plan -input=false
 
     if [ "${?}" -ne 0 ]; then
