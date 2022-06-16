@@ -6,11 +6,11 @@ validate_inputs() {
         exit 1
 
     elif [ -z ${INPUT_TF_COMMAND} ]; then
-        echo "Input tg_command cannot be empty."
+        echo "Input tf_command cannot be empty."
         exit 1
 
     elif [ -z ${INPUT_TF_WORKING_DIR} ]; then
-        echo "Input tg_working_dir cannot be empty."
+        echo "Input tf_working_dir cannot be empty."
         exit 1
 
     elif [ -z ${INPUT_GIT_SSH_KEY} ]; then
