@@ -1,0 +1,24 @@
+name: 'Terraform GitHub Actions'
+description: 'Run Terraform commands via GitHub Actions'
+author: 'Gabriel M. Dutra <gmdutra98@gmail.com'
+
+inputs:
+  tf_version:
+    description: 'Terraform binary version'
+    required: true
+
+  tf_command:
+    description: 'Run Terraform command'
+    required: true
+
+  tf_working_dir:
+    description: 'Terraform working dir'
+    required: true
+
+  git_ssh_key:
+    description: 'SSH key to clone Terraform project'
+    required: true
+
+runs:
+  using: 'docker'
+  image: './Dockerfile'
