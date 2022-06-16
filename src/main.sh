@@ -77,10 +77,14 @@ main() {
     source ${dirName}/terraform_plan.sh
 
     echo "[+] Changing directory to ${tfWorkingDir}"
+    
+    ls -lah
 
     cd ${tfWorkingDir}
 
     echo "[+] Listing files..."
+    
+    ls -lah
 
     case "${tfCommand}" in
         apply)
